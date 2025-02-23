@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include <cstring>
+int main() {
+  
+    char s1[]="Sajib";
+  
+    int len = strlen(s1);
+
+    printf("Length = %d\n",len);
+
+}

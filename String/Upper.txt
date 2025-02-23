@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<cstring>
+int main() {
+
+    char str1[30]="Bangladesh";
+    
+    strlwr(str1);
+    printf("str1 = %s\n",str1);
+    
+    strupr(str1);
+    printf("str1 = %s\n",str1);
+    
+  }

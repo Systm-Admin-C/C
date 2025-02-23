@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <cstring>
+
+int main() {
+    char str1[50];
+    int i, capital, small, digit;
+    i=capital=small=digit=0;
+
+    printf("Enter a string : ");
+    gets(str1); 
+
+    while (str1[i] != '\0')
+    {
+        if (str1[i]>=65 && str1[i]<=90)
+             capital++;
+
+        else if (str1[i]>=97 && str1[i]<=122)
+             small++;
+      
+        else if (str1[i]>=48 && str1[i]<=57)
+             digit++;     
+       
+             i++;
+    } 
+
+    printf("Number of Capital Letter = %d\n", capital);
+    printf("Number of Small Letter = %d\n", small);
+    printf("Number of Digits = %d\n", digit);
+
+    
+}

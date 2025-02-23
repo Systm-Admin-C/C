@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<cstring>
+int main() {
+
+    char str1[]="Sajib Ahmed";
+    printf("str = %s\n",str1);
+    
+    strrev(str1);
+
+    printf("Str = %s\n",str1);
+
+
+}

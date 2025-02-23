@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main() {
+  
+    char s1[6];
+     
+    s1[0] = 'S';
+    s1[1] = 'a';
+    s1[2] = 'j';
+    s1[3] = 'i';
+    s1[4] = 'b';
+    s1[5] = '\0';
+
+    printf("s1 = %s\n",s1);
+
+}

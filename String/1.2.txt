@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main() {
+  
+    char s1[]="Sajib Ahmed \
+    BD";
+    
+    printf("s1 = %s\n",s1);
+
+}

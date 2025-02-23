@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<cstring>
+int main() {
+
+    char str1[]="C Programming ";
+    char str2[]="IS Everywhere";
+
+    strcat(str1,str2);
+
+    printf("String 1 = %s\n",str1);
+    printf("String 2 = %s\n",str2);
+
+
+}
