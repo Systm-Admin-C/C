@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#define ROWS 5
+#define COLUMNS 5
+
+int main() {
+    int row, column, product[ROWS][COLUMNS];
+
+    printf("MULTIPLICATION TABLE\n\n");
+
+
+    for (row = 0; row < ROWS; row++) {
+        for (column = 0; column < COLUMNS; column++) {
+            product[row][column] = (row + 1) * (column + 1);
+        }
+    }
+    
+    for (row = 0; row < ROWS; row++) {
+        for (column = 0; column < COLUMNS; column++) {
+            printf("%4d", product[row][column]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}

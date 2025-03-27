@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+
+float p;
+int n,val;
+
+scanf("%f",&p);
+
+n=int(p);
+
+val=n%10;
+
+printf("%d",val);
+    
+    return 0;
+}

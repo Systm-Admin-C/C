@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+void main() {
+    int a1[10][10], a2[10][10], c[10][10];
+    int i, j, k, a, b;
+
+    // Input size of the square matrix
+    printf("Enter the size of the square matrix: ");
+    scanf("%d", &a);
+    b = a; // Assuming square matrix
+
+    // Input first matrix
+    printf("You have to enter the matrix elements in row-wise fashion:\n");
+    for (i = 0; i < a; i++) {
+        for (j = 0; j < b; j++) {
+            printf("Enter the next element in the 1st matrix: ");
+            scanf("%d", &a1[i][j]);
+        }
+    }
+
+    // Input second matrix
+    for (i = 0; i < a; i++) {
+        for (j = 0; j < b; j++) {
+            printf("Enter the next element in the 2nd matrix: ");
+            scanf("%d", &a2[i][j]);
+        }
+    }
+
+    // Multiply matrices
+    for (i = 0; i < a; i++) {
+        for (j = 0; j < b; j++) {
+            c[i][j] = 0;
+            for (k = 0; k < a; k++) {
+                c[i][j] += a1[i][k] * a2[k][j];
+            }
+        }
+    }
+
+    // Print the resultant matrix
+    printf("The product of the matrices is:\n");
+    for (i = 0; i < a; i++) {
+        for (j = 0; j < b; j++) {
+            printf("%d\t", c[i][j]);
+        }
+        printf("\n");
+    }
+}
